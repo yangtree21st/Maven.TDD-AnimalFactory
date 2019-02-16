@@ -9,9 +9,10 @@ import java.util.Date;
  * @author leon on 4/19/18.
  */
 public abstract class Mammal implements Animal {
+    private static String name;
     private final Integer id;
     private ArrayList<Food> eatenMeals;
-    private String name;
+
     private Date birthDate;
 
     public Mammal(String name, Date birthDate, Integer id) {
@@ -21,7 +22,7 @@ public abstract class Mammal implements Animal {
         this.id = id;
     }
 
-    public String getName() {
+    public  String getName() {
         return name;
     }
 
